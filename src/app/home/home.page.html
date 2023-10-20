@@ -1,21 +1,11 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="/" [text]="'Back'"></ion-back-button>
-    </ion-buttons>
     <ion-title>
-      Map
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <mgl-map
-    [style]="'https://mobil.itmc.tu-dortmund.de/mvt/style.json'"
-    [zoom]="[15]"
-    [center]="[7.4128, 51.4875]"
-    [maxZoom]="20"
-    [minZoom]="12"
-  >
-  </mgl-map>
+  <ion-button routerLink="map">Go to Map</ion-button>
 </ion-content>
